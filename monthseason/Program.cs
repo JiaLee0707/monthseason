@@ -14,7 +14,7 @@ namespace monthseason
             var month = Console.ReadLine();
 
             int num = 0;
-            if (!(month.Contains("월") || month.Contains("0") || int.TryParse(month, out num)))
+            if (!(month.Contains("월") || int.TryParse(month, out num)))
             {
                 Console.WriteLine("잘못입력하셨습니다...");
             }
